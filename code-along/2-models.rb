@@ -67,7 +67,7 @@ puts "Claifornia Companies: #{cali_comapnies.count}"
 # 4. query companies table to find single row for Apple
 
 apple = Company.find_by({"name" => "Apple"})
-p apple
+#p apple
 
 # 5. read a row's column value
 
@@ -77,9 +77,19 @@ puts apple["url"]
 
 apple["url"] = "https://wwww.apple.com"
 apple.save
-p apple
+#p apple
 
 company = Company.find_by({"name" => "Apple"})
 p company["url"]
 
 # 7. delete a row
+
+#apple.destroy
+puts "Companies: #{Company.all.count}"
+
+companies = Company.all
+
+for zebra in companies
+  puts zebra["name"]
+
+end
