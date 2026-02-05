@@ -12,14 +12,17 @@
 
 # 1. in terminal, generate the model and table for Company
 # rails generate model _____
-
+#    rails generate model Company
 # 2. open newly generated files
-
+# create db/...
+# create app/..
 # 3. in the db/migrate file, add relevant columns matching our domain model
-
+# t.string "name" 
+# etc 
+# etc
 # 4. in terminal, execute the migration file
 # rails db:migrate
-
+#ORM gives it a primary key since it is a best practice
 # 5. check the schema to confirm the change
 # pay attention to the SQL in the log
 
